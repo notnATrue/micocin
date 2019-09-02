@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    height: max-content;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+.header__wrapper .header__logo {
+    margin-top: 5px;
+    transform: scale(0.8, 0.8);
+    display: inline-table;
+}
+.header__wrapper .number__one {
+    position: relative;
+}
+.header__wrapper .lucky {
+    margin-left: 98px !important;
+    position: relative;
+}
+.header__wrapper .lucky::before {
+    content: "";
+    background-image: url('../images/lucky.png');
+    background-size: 38px 38px;
+    width: 38px; 
+    height: 38px; 
+    opacity: 0.5;
+    top: 0;
+    left: -42px;
+    position: absolute;
+}
+.header__wrapper .number__one::before {
+    content: "";
+    background-image: url('../images/number_one.png');
+    background-size: 38px 38px; 
+    width: 38px; 
+    height: 38px; 
+    opacity: 0.5;
+    top: 0;
+    left: -42px;
+    position: absolute;
+}
+.header__wrapper {
+    display: inline-flex;
+}
+.header__wrapper .menu {
+    margin-left: 60px;
+    display: inline-flex;
+}
+.header__wrapper h5 {
+    margin-left: 10px;
+}
+.header__wrapper .menu p {
+    margin-left: 60px;
+    color: #d9dee5;
+}
+
+.section__one {
+    height: 700px;
+}
