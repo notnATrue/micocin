@@ -19,7 +19,7 @@ header {
     position: relative;
 }
 .header__wrapper .lucky {
-    margin-left: 98px !important;
+    margin-left: 78px !important;
     position: relative;
 }
 .header__wrapper .lucky::before {
@@ -55,8 +55,9 @@ header {
     margin-left: 10px;
 }
 .header__wrapper .menu p {
-    margin-left: 60px;
-    color: #d9dee5;
+    font-size: 12px;
+    margin-left: 40px;
+    color: #868586;
 }
 
 section {
@@ -67,6 +68,7 @@ section {
     background-image: url('../images/image__one.png');
     background-size: 60% 100%;
     background-repeat: no-repeat;
+    
     background-color: #e2e2e2;
 }
 .section__one::before {
@@ -92,5 +94,22 @@ section {
     background-size: 40px 20px;
     background-image:
     radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+.leg {
+    width: 50%;
+    top: 0;
+    left: 10%;
+    position: relative;
+}
+.leg::before {
+    width: 100%;
+    height: 500px;
+    content: "";
+    top: -60px;
+    left: -60px;
+    position: absolute;
+    background-image: url('../images/leg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
