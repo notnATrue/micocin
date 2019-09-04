@@ -63,12 +63,16 @@ header {
 section {
     height: 700px;
 }
+header {
+    position: absolute;
+    left: 30%;
+    z-index: 999;
+}
 .section__one {
     position: relative;
     background-image: url('../images/image__one.png');
-    background-size: 60% 100%;
+    background-size: 1000px 100%;
     background-repeat: no-repeat;
-    
     background-color: #e2e2e2;
 }
 .section__one::before {
@@ -95,21 +99,137 @@ section {
     background-image:
     radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
 }
-.leg {
-    width: 50%;
-    top: 0;
-    left: 10%;
+
+.circle {
+    width: 70%;
+    top: 100px;
+    left: 100px;
     position: relative;
 }
-.leg::before {
+.circle::before {
     width: 100%;
     height: 500px;
     content: "";
-    top: -60px;
+    top: 40px;
+    left: 280px;
+    position: absolute;
+    background-image: url('../images/circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.circle::after {
+    width: 100%;
+    height: 400px;
+    content: "";
+    top: 90px;
+    left: 330px;
+    position: absolute;
+    background-image: url('../images/circle2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.leg {
+    width: 600px;
+    top: 0;
+    left: 12%;
+    position: relative;
+}
+.leg::after {
+    width: 100%;
+    height: 500px;
+    content: "";
+    top: 0;
     left: -60px;
     position: absolute;
     background-image: url('../images/leg.png');
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: 2;
+}
+.leg::before {
+
+}
+
+@media screen and (max-width: 1600px) {
+    .section__one {
+        background-size: 800px 100%;
+    }
+    .header__wrapper .menu p {
+        font-size: 12px;
+        margin-left: 10px;
+        color: #868586;
+    }
+    .header__wrapper .lucky {
+        margin-left: 58px !important;
+        position: relative;
+    }
+    /* .circle {
+        top: 200px;
+        transform: scale(0.8)
+    }
+    .leg {
+        transform: scale(0.9)
+    }
+    .leg::after {
+        left: -200px;
+    } */
+    .circle::before {
+        left: 140px;
+    }
+    .circle::after {
+        left: 190px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section__one {
+        background-size: 600px 100%;
+    }
+    .leg {
+        transform: scale(0.9);
+        left: 5%;
+    }
+    .circle {
+        top: 200px;
+        left: 50px;
+        transform: scale(0.8)
+    }
+    header {
+        left: 120px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .section__one {
+        background-size: 400px 100%;
+    }
+    .circle::before {
+        left: 0px;
+    }
+    .circle::after {
+        left: 50px;
+    }
+    .leg {
+        transform: scale(0.7);
+        left: 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    header {
+        left: 0;
+    }
+}
+@media screen and (max-width: 630px) {
+    .header__wrapper  .header__logo {
+        position: absolute;
+        left: 180px;
+    }
+    .header__wrapper  h5 {
+        position: absolute;
+        left: 260px;
+    }
+    .header__wrapper .menu {
+        position: absolute;
+        top: 40px;
+        left: 100px;
+    }
 }
 
